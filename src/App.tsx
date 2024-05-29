@@ -15,6 +15,9 @@ function App() {
         <button onClick={() => setcount((현재count) => 현재count + 1)}>
           ▲
         </button>
+        <button onClick={() => setcount(0)}>
+          ○
+        </button>
         <button onClick={() => setcount((현재count) => 현재count - 1)}>
           ▼
         </button>
