@@ -8,7 +8,7 @@ function App() {
     <div>
       <h1>0</h1>
       <h2>
-        <button>▲</button>
+        <button onClick={() => console.log("클릭")}>▲</button>
       </h2>
     </div>
   );
