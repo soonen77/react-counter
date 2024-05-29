@@ -3,7 +3,7 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 
-function App() {
+function Counter()  {
   const 리턴값 = useState(0);
   const count = 리턴값[0];
   const setcount = 리턴값[1];
@@ -26,6 +26,16 @@ let 리셋버튼;
         {리셋버튼}
     </div>
   );
+}
+
+function App() {
+  return (
+    <div>
+    <Counter></Counter>
+    <Counter></Counter>
+    <Counter></Counter>
+    </div>
+  )
 }
 
 export default App;
