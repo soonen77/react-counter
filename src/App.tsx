@@ -24,11 +24,20 @@ function Counter() {
 }
 
 function App() {
-  const counterArray = [];
-  for (let i = 0; i < 1000; i++)  {
-    counterArray.push(<Counter />);
-  }
-  return <div>{counterArray}</div>
+ 
+  const 학교이름들 = ["경기고", "현대고", "세화고", "청담고", "휘문고"];
+
+  return (
+    <div>
+      <h1>서울시 소재 고등학교의 학생수</h1>
+      {학교이름들.map((학교이름) => (
+        <div>
+          <h2>{학교이름}</h2>
+          <Counter />
+        </div>
+      ))}
+    </div>
+  );
 }
 
 export default App;
