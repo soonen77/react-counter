@@ -20,10 +20,10 @@ let 리셋버튼;
         <button onClick={() => setcount((현재count) => 현재count + 1)}>
           ▲
         </button>
-        {리셋버튼}
         <button onClick={() => setcount((현재count) => 현재count - 1)}>
           ▼
         </button>
+        {리셋버튼}
     </div>
   );
 }
