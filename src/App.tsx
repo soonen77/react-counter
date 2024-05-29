@@ -13,7 +13,11 @@ function App() {
       <h1>{count}</h1>
       <h2>
         <button onClick={() => setcount((현재count) => 현재count + 1)}>
-        ▲</button>
+          ▲
+        </button>
+        <button onClick={() => setcount((현재count) => 현재count - 1)}>
+          ▼
+        </button>
       </h2>
     </div>
   );
