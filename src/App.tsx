@@ -24,8 +24,11 @@ function Counter() {
 }
 
 function App() {
-  const array = new Array(1000).fill(Counter);
-  return array.map((Counter) => <Counter />);
+  const counterArray = [];
+  for (let i = 0; i < 1000; i++)  {
+    counterArray.push(<Counter />);
+  }
+  return <div>{counterArray}</div>
 }
 
 export default App;
